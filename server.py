@@ -29,6 +29,11 @@ def answer_call():
     return jsonify(ncco)
 
 
+@app.route("/webhooks/event", methods=["POST"])
+def events():
+    return "200"
+
+
 @sockets.route("/socket", methods=["GET"])
 def echo_socket(ws):
     while not ws.closed:
