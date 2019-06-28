@@ -35,10 +35,10 @@ nexmo number:buy 447700900001
 
 ### Create a Voice API application
 
-Use the CLI to create a Voice API application with the webhooks that will be responsible for answering a call on your Nexmo number (`/webhooks/answer`) and logging call events (`/webhooks/events`), respectively. Replace `example.com` in the following command with your own public-facing URL host name (consider using [ngrok](https://ngrok.io) for testing purposes, and if you do use it, run it now to get the temporary URLs that `ngrok` provides):
+Use the CLI to create a Voice API application with the webhooks that will be responsible for answering a call on your Nexmo number (`/webhooks/answer`) and logging call events (`/webhooks/event`), respectively. Replace `example.com` in the following command with your own public-facing URL host name (consider using [ngrok](https://ngrok.io) for testing purposes, and if you do use it, run it now to get the temporary URLs that `ngrok` provides):
 
 ```
-nexmo app:create "My Echo Server" https://example.com/webhooks/answer https://example.com/webhooks/events
+nexmo app:create "My Echo Server" https://example.com/webhooks/answer https://example.com/webhooks/event
 ```
 
 Make a note of the application ID returned by this command.
